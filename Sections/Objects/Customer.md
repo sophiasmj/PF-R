@@ -7,7 +7,7 @@ This object is used when creating a customer on the PayFabric Receivables websit
 
 | Attribute | Data Type | Definition | Max Length |
 | :----------- | :--------- | :--------- | :--------- |
-| BillingAddress | [Object](Address.md#AddressResponse) | Address object |
+| BillingAddress | [Object](Address.md#AddressPost) | Address object |
 | CopyEmail | String Array | List of emails to be CC'd for emails | nvarchar(255) |
 | Class | String | Class associated to a customer | varchar(50) |
 | Currency | String | Currency code | nvarchar(10) |
@@ -17,8 +17,8 @@ This object is used when creating a customer on the PayFabric Receivables websit
 | Name | String | Customer name | nvarchar(100) |
 | ParentCustomerId | String | Parent customer number | nvarchar(25) |
 | PaymentTerms | String | Payment term | nvarchar(50) |
-| PrimaryAddress | [Object](Address.md#AddressResponse) | Address object |
-| ShippingAddress | [Object](Address.md#AddressResponse) | Address object |
+| PrimaryAddress | [Object](Address.md#AddressPost) | Address object |
+| ShippingAddress | [Object](Address.md#AddressPost) | Address object |
 | ShippingMethod | String | Shipping method associated to the customer | nvarchar(50) |
 | Status | String | Status of the customer. Valid options are ``Active``, ``Inactive``, and ``Deleted`` | nvarchar(50) |
 | StatementName | String | Statement name | nvarchar(100) |
