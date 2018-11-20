@@ -35,7 +35,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /document/history?PageSize=10&PageIndex=0&Criteria[DocumentDate][Min]=2010-01-01
+	GET /document/history?filter.pageSize=10&filter.pageIndex=0&filter.criteria.DocumentDate.Min=2010-01-01
 </pre>
 
 ###### Response
@@ -132,7 +132,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /document/history?PageSize=10&PageIndex=0&Criteria[DocumentDate][Min]=2010-01-01
+	GET /document/history?filter.pageSize=10&filter.pageIndex=0&filter.criteria.DocumentDate.Min=2010-01-01
 </pre>
 
 ###### Response

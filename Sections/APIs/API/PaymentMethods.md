@@ -224,7 +224,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /paymentmethods/paging?PageSize=10&PageIndex0&Criteria[CurrencyCode]=USD
+	GET /paymentmethods/paging?filter.pageSize=10&filter.pageIndex0&filter.criteria.CurrencyCode=USD
 </pre>
 
 ###### Response

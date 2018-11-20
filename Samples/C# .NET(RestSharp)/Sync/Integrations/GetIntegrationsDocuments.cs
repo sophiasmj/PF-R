@@ -12,7 +12,7 @@ public void GetIntegrations(string URL, Token token, ref IntegrationPagingRespon
 	// Go to https://github.com/NodusTechnologies/ePay-Advantage/blob/master/Sections/Cloud%20API%20Guide/Sections/Objects/Integrations.md for more details about the object.
 	// ------------------------------------------------------
 	
-	var client = new RestClient(URL + "sync/API/integrations/payments?PageSize=10&PageIndex=0");
+	var client = new RestClient(URL + "sync/API/integrations/payments?filter.pageSize=10&filter.pageIndex=0");
 	var request = new RestRequest(Method.GET);
 	request.AddHeader("content-type", "application/json");
 	request.AddHeader("authorization", "Bearer " + token.access_token);

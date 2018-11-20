@@ -32,7 +32,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/outstanding/currencies?Criteria[CustomerId]=Nodus0001
+	GET /invoices/outstanding/currencies?filter.criteria.CustomerId=Nodus0001
 </pre>
 
 ###### Response
@@ -292,7 +292,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/outstanding?PageSize=10&PageIndex=0&Criteria[CustomerId]=Nodus0001
+	GET /invoices/outstanding?filter.pageSize=10&filter.pageIndex=0&filter.criteria.CustomerId=Nodus0001
 </pre>
 
 ###### Response
@@ -395,7 +395,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/outstanding/allselected?Criteria[CustomerId]=Nodus0001
+	GET /invoices/outstanding/allselected?filter.criteria.CustomerId=Nodus0001
 </pre>
 
 ###### Response
@@ -446,7 +446,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/outstanding/export?Criteria[CustomerId]=Nodus0001
+	GET /invoices/outstanding/export?filter.criteria.CustomerId=Nodus0001
 </pre>
 
 ###### Response
@@ -492,7 +492,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/paid?PageSize=10&PageIndex=0&Criteria[CustomerId]=Nodus0001
+	GET /invoices/paid?filter.pageSize=10&filter.pageIndex=0&filter.criteria.CustomerId=Nodus0001
 </pre>
 
 ###### Response
@@ -575,7 +575,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /invoices/pastdue?PageSize=10&PageIndex=0&Criteria[CustomerId]=Nodus0001
+	GET /invoices/pastdue?filter.pageSize=10&filter.pageIndex=0&filter.criteria.CustomerId=Nodus0001
 </pre>
 
 ###### Response

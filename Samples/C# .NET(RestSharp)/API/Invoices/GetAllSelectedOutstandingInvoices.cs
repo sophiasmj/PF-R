@@ -12,7 +12,7 @@ public void GetAllSelectedOutstandingInvoices(string URL, Token token, ref Invoi
 	// Go to https://github.com/NodusTechnologies/ePay-Advantage/blob/master/Sections/Cloud%20API%20Guide/Sections/Objects/Invoices.md for more details about the object.
 	// ------------------------------------------------------
 	
-	var client = new RestClient(URL + "API/invoices/outstanding/allselected?Criteria[CustomerId]=Nodus0001");
+	var client = new RestClient(URL + "API/invoices/outstanding/allselected?filter.criteria.CustomerId=Nodus0001");
 	var request = new RestRequest(Method.GET);
 	request.AddHeader("content-type", "application/json");
 	request.AddHeader("authorization", "Bearer " + token.access_token);

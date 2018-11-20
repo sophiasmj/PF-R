@@ -36,7 +36,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /payments?PageSize=10&PageIndex=0&Criteria[CustomerId][EqualsTo]=Nodus0001
+	GET /payments?filter.pageSize=10&filter.pageIndex=0&filter.criteria.CustomerId.EqualsTo=Nodus0001
 </pre>
 
 ###### Response

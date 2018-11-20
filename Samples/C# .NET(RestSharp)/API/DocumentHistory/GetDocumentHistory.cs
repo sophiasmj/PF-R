@@ -12,7 +12,7 @@ public void GetDocumentHistory(string URL, Token token, ref DocumentHistoryPagin
 	// Go to https://github.com/NodusTechnologies/ePay-Advantage/blob/master/Sections/Cloud%20API%20Guide/Sections/Objects/DocumentHistory.md for more details about the object.
 	// ------------------------------------------------------
 	
-	var client = new RestClient(URL + "API/documents/history?PageSize=10&PageIndex=0");
+	var client = new RestClient(URL + "API/documents/history?filter.pageSize=10&filter.pageIndex=0");
 	var request = new RestRequest(Method.GET);
 	request.AddHeader("content-type", "application/json");
 	request.AddHeader("authorization", "Bearer " + token.access_token);

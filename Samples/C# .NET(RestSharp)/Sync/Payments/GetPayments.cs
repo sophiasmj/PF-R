@@ -12,7 +12,7 @@ public void GetPayments(string URL, Token token, ref PaymentPagingResponse payme
 	// Go to https://github.com/NodusTechnologies/ePay-Advantage/blob/master/Sections/Cloud%20API%20Guide/Sections/Objects/Payment.md for more details about the object.
 	// ------------------------------------------------------
 	
-	var client = new RestClient(URL + "API/payments?PageSize=10&PageIndex=0");
+	var client = new RestClient(URL + "API/payments?filter.pageSize=10&filter.pageIndex=0");
 	var request = new RestRequest(Method.GET);
 	request.AddHeader("content-type", "application/json");
 	request.AddHeader("authorization", "Bearer " + token.access_token);

@@ -58,7 +58,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-  GET /integrations?PageSize=10&PageIndex=1&Criteria[Status][EqualsTo]=Pending
+  GET /integrations?filter.pageSize=10&filter.pageIndex=1&filter.criteria.Status.EqualsTo=Pending
 </pre>
 
 ###### Response
@@ -121,7 +121,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /integrations/payments?PageSize=10&PageIndex=0&Criteria[TimeStamp][EqualsTo]=2018-05-29
+	GET /integrations/payments?filter.pageSize=10&filter.pageIndex=0&filter.criteria.TimeStamp.EqualsTo=2018-05-29
 </pre>
 
 ###### Response

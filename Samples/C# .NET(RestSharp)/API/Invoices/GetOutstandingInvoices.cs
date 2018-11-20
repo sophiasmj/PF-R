@@ -12,7 +12,7 @@ public void GetOutstandingInvoices(string URL, Token token, ref InvoicePagingRes
 	// Go to https://github.com/NodusTechnologies/ePay-Advantage/blob/master/Sections/Cloud%20API%20Guide/Sections/Objects/Invoices.md for more details about the object.
 	// ------------------------------------------------------
 	
-	var client = new RestClient(URL + "API/invoices/outstanding?PageSize=10&PageIndex=0");
+	var client = new RestClient(URL + "API/invoices/outstanding?filter.pageSize=10&filter.pageIndex=0");
 	var request = new RestRequest(Method.GET);
 	request.AddHeader("content-type", "application/json");
 	request.AddHeader("authorization", "Bearer " + token.access_token);
