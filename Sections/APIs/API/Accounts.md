@@ -1,10 +1,11 @@
 Accounts
 ============
 
-The Account API is used for all information related to an account on the PayFabric Receivables website. Please note that all requests require API authentication, see our [guide](Token.md) on how to authenticate.
+The Account API is used for all information related to an account on the PayFabric Receivables website. Please note that some of the below requests require API authentication and some do not, see our [guide](Token.md) on how to authenticate.
 
 Retrieve the current user
 --------------------
+This api requires authentication
 
 * `GET /currentuser` will retrieve the currently logged in user.
 
@@ -53,6 +54,7 @@ Please note that **bold** fields are required fields, and all others are optiona
 
 Update a customer User
 --------------------
+This api requires authentication
 
 * `PUT /users` will update a user on the PayFabric Receivables website based on the JSON request payload.
 
@@ -136,6 +138,7 @@ For more information and descriptions on available fields please see our [object
 
 Update an user's profile
 --------------------
+This api requires authentication
 
 * `POST /users/profile` will send an update for the customer's profile
 
