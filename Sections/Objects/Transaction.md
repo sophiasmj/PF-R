@@ -16,8 +16,8 @@ This Transaction object represents a transaction in the PayFabric Receivables we
 | ConnectorSetupIDGuid | Guid | SetupID Guid used to process | uniqueidentifier |
 | Country | String | Billing address country | nvarchar(100) |
 | CreatedOn | DateTime | Created on date | datetime |
-| Currency | String | Currency code | nvarchar(25) |
-| CustomerId | String | Customer ID specified by the client | nvarchar(25) |
+| Currency | String | Currency code | nvarchar(10) |
+| CustomerId | String | Customer ID specified by the client | nvarchar(50) |
 | DocumentId | String | Document ID of the transaction | nvarchar(25) |
 | DocumentType | int | Document type | nvarchar(20) |
 | ECAbaNumber | String | ECheck ABA number | nvarchar(50) |
@@ -28,14 +28,14 @@ This Transaction object represents a transaction in the PayFabric Receivables we
 | State | String | Billing address state | nvarchar(100) |
 | Status | String | Status of the transaction. Valid options are ``None``, ``Approved``, ``Denied``, ``MoreInfo``, ``Failure``, ``AVSFailure``, and ``Queued`` | nvarchar(max) |
 | TenderType | String | Payment method used with the transaction. Valid options are ``Unknown``, ``CreditCard``, and ``ECheck`` | nvarchar(max) |
-| TransactionKey | String | Transaction key identifier | nvarchar(max) |
+| TransactionKey | String | Transaction key identifier | nvarchar(100) |
 | TrxAmount | Decimal | Transaction amount | decimal(19,2) |
 | TrxAuthCode | String | Transaction auth code returned from the gateway | nvarchar(255) |
 | TrxAVSAddressResponse | String | Transaction AVS address response returned from the gateway | nvarchar(10) |
-| TrxAVSZipResponse | String | Transaction AVS zip response returned from the gateway | nvarchar(10) |
-| TrxCVV2Response | String | Transaction CVV2 response returned from the gateway | nvarchar(10) |
+| TrxAVSZipResponse | String | Transaction AVS zip response returned from the gateway | nvarchar(100) |
+| TrxCVV2Response | String | Transaction CVV2 response returned from the gateway | nvarchar(100) |
 | TrxOriginationID | String | Transaction origination ID returned from the gateway | nvarchar(150) |
 | TrxResponseMessage | String | Transaction response message returned from the gateway | nvarchar(4000) |
 | TrxResultCode | String | Transaction result code returned from the gateway | nvarchar(50) |
-| TrxType | String | Transaction type. Valid options are ``None``, ``Sale``, ``Book``, ``PreAuth``, ``Force``, ``Void``, ``Credit``, ``Ship``, ``TokenCreate``, ``TokenUpdate``, and ``TokenDelete`` | nvarchar(max) |
+| TrxType | String | Transaction type. Valid options are ``None``, ``Sale``, ``Book``, ``PreAuth``, ``Force``, ``Void``, ``Credit``, ``Ship``, ``TokenCreate``, ``TokenUpdate``, and ``TokenDelete`` | varchar(100) |
 | Zip | String | Billing address zip | nvarchar(20) |
