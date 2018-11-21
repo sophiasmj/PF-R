@@ -58,7 +58,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-  GET /integrations?filter.pageSize=10&filter.pageIndex=1&filter.criteria.Status.EqualsTo=Pending
+  GET /integrations?filter.pageSize=10&filter.pageIndex=1&filter.criteria.Status=Pending
 </pre>
 
 ###### Response
