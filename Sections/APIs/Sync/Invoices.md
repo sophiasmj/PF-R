@@ -11,9 +11,9 @@ Create or Update an Invoice
 ###### Request
 <pre>
 {
-	"Amount": "30.00",
+	<b>"Amount": "30.00"</b>,
 	"BalanceDue": "30.00",
-	<b>"BatchNumber": "API20180525"</b>,
+	"BatchNumber": "API20180525",
 	"BillingAddress": {
 		"Address1": "1234 Street",
 		"Address2": null,
@@ -37,7 +37,7 @@ Create or Update an Invoice
 	<b>"CustomerId": "Nodus0002"</b>,
 	"CustomerName": "Nodus Technologies",
 	"Discount": "0.00",
-	"DocumentType": "STDINV",
+	"DocumentType": "Invoice",
 	"DueDate": "10/30/2017 3:19:11 PM",
 	"ExtensionData": "",
 	"Freight": "0.00",
@@ -88,7 +88,7 @@ Create or Update an Invoice
 		"UnitOfMeasure": "EACH",
 		"UnitPrice": "30.00"
 	}],
-	<b>"InvoiceType": "3"</b>,
+	"InvoiceType": "3",
 	"MiscCost": "0.00",
 	"PaymentTerms": null,
 	"PONumber": null,
