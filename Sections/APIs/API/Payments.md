@@ -7,7 +7,7 @@ The Payment API is used for processing, and viewing payment information on the P
 Process a Payment
 --------------------
 
-* `POST /payment/process` will process a payment on the PayFabric Receivables website based on the JSON request payload.
+* `POST /payments/process` will process a payment on the PayFabric Receivables website based on the JSON request payload.
 
 ###### Request
 <pre>
