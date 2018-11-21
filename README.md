@@ -68,6 +68,7 @@ as child elements of other objects.
 * [Create or Update a Payment](Sections/APIs/Sync/Payments.md#create-or-update-a-payment)
 * [Retrieve Payments](Sections/APIs/Sync/Payments.md#retrieve-payments)
 * [Retrieve a Payment](Sections/APIs/Sync/Payments.md#retrieve-payments)
+* [Void a Payment](Sections/APIs/Sync/Payments.md#void-payment)
 
 
 ## Receivables API
