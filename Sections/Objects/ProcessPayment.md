@@ -9,9 +9,9 @@ This object is used when creating a request to process a payment on the PayFabri
 | :----------- | :--------- | :--------- | :--------- |
 | AdditionalFee | Decimal | Total additional fee amount | decimal(19,2) |
 | ApplyCredit | [Object](ApplyCredit.md#ApplyCreditRequest) | Application of any credits | decimal(19,2) |
-| Comment | String | Comment of the payment | nvarchar(30) |
-| Currency | String | Currency code | nvarchar(25) |
-| CustomerId | String | Customer ID specified by the client | nvarchar(25) |
+| Comment | String | Comment of the payment | nvarchar(500) |
+| Currency | String | Currency code | nvarchar(10) |
+| CustomerId | String | Customer ID specified by the client | nvarchar(50) |
 | CVV2 | String | CVV2 of the card being used | Not Saved |
 | PaymentApplies | [Object](PaymentApply.md) | Invoice(s) the payment is applied to |
 | PaymentMethod | String | Payment method used with the payment. Valid options are ``Unknown``, ``CreditCard``, ``ECheck``, ``Check``, and ``Cash`` | nvarchar(25) |
