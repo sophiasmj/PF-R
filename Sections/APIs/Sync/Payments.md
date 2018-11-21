@@ -106,13 +106,15 @@ This request accepts the below query string parameters to add additional options
             "Currency": "Z-US$",
             "CustomerId": "Nodus0001",
             "Identity": "",
-            "InvoiceApply": [
-                {
-                    "InvoiceId": "STDINV2006",
-                    "Identity": "",
-                    "PayAmount": 1,
-                    "InvoiceType": "STDINV"
-                }
+             "PaymentApplies": [
+        {
+          "AppliedToInvoice": false,
+          "InvoiceId": "string",
+          "Identity": "string",
+          "PayAmount": 0,
+          "DocumentType": 0,
+          "RowVersion": "string"
+        }
             ],
             "IsVoid": false,
             "PaymentId": "WEBPMT0000000020",
@@ -134,8 +136,8 @@ Create or Update a Payment
 ###### Request
 <pre>
 {
-	<b>"Amount": "1.00"</b>,
-	<b>"BalanceAmount": "1.00"</b>,
+	"Amount": "1.00",
+	"BalanceAmount": "1.00",
 	"BatchNumber": "API20171031",
 	"CCNumber": "XXXXXXXXXXXX1111",
 	"CheckNumber": null,
@@ -143,13 +145,16 @@ Create or Update a Payment
 	"Currency": "USD",
 	<b>"CustomerId": "Nodus0001"</b>,
 	"Identity": "",
-	"InvoiceApply": [{
-		"Identity": "",
-		"InvoiceId": "STDINV999999",
-		"InvoiceType": 3,
-		"PayAmount": "1.00"
-	}],
-	"IsVoid": "0",
+	 "PaymentApplies": [
+        {
+          "AppliedToInvoice": false,
+          "InvoiceId": "string",
+          "Identity": "string",
+          "PayAmount": 0,
+          "DocumentType": 0,
+          "RowVersion": "string"
+        }],
+	"IsVoid": false,
 	"Notes": "",
 	<b>"PaymentId": "APIPMT000000001"</b>,
 	"PaymentMethod": "CreditCard",
@@ -201,12 +206,14 @@ Retrieve a Payment
     "Currency": "USD",
     "CustomerId": "Nodus0001",
     "Identity": "",
-    "InvoiceApply": [
+     "PaymentApplies": [
         {
-            "InvoiceId": "STDINV999999",
-            "Identity": "",
-            "PayAmount": 1,
-            "InvoiceType": "3"
+          "AppliedToInvoice": false,
+          "InvoiceId": "string",
+          "Identity": "string",
+          "PayAmount": 0,
+          "DocumentType": 0,
+          "RowVersion": "string"
         }
     ],
     "IsVoid": false,
