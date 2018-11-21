@@ -121,7 +121,7 @@ Create or Update an Invoice
 }
 </pre>
 
-Please note that **bold** fields are required fields, and all others are optional. For more information and descriptions on available fields please see our [object reference](../Objects/Invoice.md#InvoicePost).
+Please note that **bold** fields are required fields, and all others are optional. For more information and descriptions on available fields please see our [object reference](../../Objects/Invoice.md#InvoicePost).
 
 ###### Response
 <pre>
