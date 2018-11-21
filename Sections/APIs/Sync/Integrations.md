@@ -121,7 +121,7 @@ This request accepts the below query string parameters to add additional options
 
 ###### Request
 <pre>
-	GET /integrations/payments?filter.pageSize=10&filter.pageIndex=0&filter.criteria.TimeStamp.EqualsTo=2018-05-29
+	GET /integrations/payments?filter.pageSize=10&filter.pageIndex=0&filter.criteria.TimeStamp=201811200123654
 </pre>
 
 ###### Response
