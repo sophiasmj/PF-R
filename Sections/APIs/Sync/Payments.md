@@ -134,8 +134,8 @@ Create or Update a Payment
 ###### Request
 <pre>
 {
-	<b>"Amount": "1.00"</b>,
-	<b>"BalanceAmount": "1.00"</b>,
+	"Amount": "1.00",
+	"BalanceAmount": "1.00",
 	"BatchNumber": "API20171031",
 	"CCNumber": "XXXXXXXXXXXX1111",
 	"CheckNumber": null,
@@ -149,7 +149,7 @@ Create or Update a Payment
 		"InvoiceType": 3,
 		"PayAmount": "1.00"
 	}],
-	"IsVoid": "0",
+	"IsVoid": false,
 	"Notes": "",
 	<b>"PaymentId": "APIPMT000000001"</b>,
 	"PaymentMethod": "CreditCard",
