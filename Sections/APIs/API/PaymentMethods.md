@@ -10,7 +10,7 @@ Retrieve Payment Methods by Currency Code
 
 ###### Request
 <pre>
-	GET /paymentmethods?currencycode=USD
+	GET /paymentmethods?currencyCode=USD
 </pre>
 
 ###### Response
